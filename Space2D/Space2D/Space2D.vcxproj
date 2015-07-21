@@ -67,12 +67,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="IOScreen.cpp" />
+    <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="WindowStates.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game.h" />
     <ClInclude Include="IOScreen.h" />
+    <ClInclude Include="Lobby.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Settings.h" />
     <ClInclude Include="StateManager.h" />
     <ClInclude Include="WindowStates.h" />
   </ItemGroup>
