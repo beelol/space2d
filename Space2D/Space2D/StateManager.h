@@ -1,3 +1,7 @@
+#ifndef STATEMANAGER_H
+#define STATEMANAGER_H
+
+
 #include <SFML\Graphics.hpp>
 
 class StateManager
@@ -5,4 +9,4 @@ class StateManager
 public:
 	virtual int Run(sf::RenderWindow &window) = 0;
 };
-
+#endif
