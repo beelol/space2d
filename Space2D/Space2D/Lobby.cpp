@@ -1,10 +1,11 @@
 #include "Lobby.h"
-#include <iostream>
 
 int Lobby::Run(sf::RenderWindow &window)
 {
+	bool running = true;
+	while (running)
+	{
 
-		std::cout << "You're now in the Lobby state";
-
+	}
 		return (-1);
 }

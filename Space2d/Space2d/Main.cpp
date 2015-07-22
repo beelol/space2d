@@ -15,19 +15,19 @@ int main()
 	int screenState = 0;
 
 	//create window
-	//IOScreen ioscreen;
+	IOScreen ioscreen;
 	sf::RenderWindow window;
 	window.setFramerateLimit(60);
 
-//	if (ioscreen.getScreenSettings())
-	//{
-	//	window.create(sf::VideoMode(1920, 1080, 32), "Space2D", sf::Style::Fullscreen);
-	//	window.setMouseCursorVisible(false);
-	//}
-	//else
-	//{
+	if (!ioscreen.getScreenSettings())
+	{
+		window.create(sf::VideoMode(1920, 1080, 32), "Space2D", sf::Style::Fullscreen);
+		window.setMouseCursorVisible(false);
+	}
+	else
+	{
 		window.create(sf::VideoMode(1920, 1080, 32), "Space2D", sf::Style::Default);
-	//}
+	}
 
 	//states
 	Menu MenuS0;

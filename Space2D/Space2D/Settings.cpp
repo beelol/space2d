@@ -1,9 +1,12 @@
 #include "Settings.h"
-#include <iostream>
 
 int Settings::Run(sf::RenderWindow &window)
 {
+	bool running = true;
+	while (running)
+	{
 
-	std::cout << "You're now in the Settings state";
+	}
+	
 	return (-1);
 }

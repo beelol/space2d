@@ -1,7 +1,7 @@
 #ifndef STATEMANAGER_H
 #define STATEMANAGER_H
 
-
+#include "GUI.h"
 #include <SFML\Graphics.hpp>
 
 class StateManager

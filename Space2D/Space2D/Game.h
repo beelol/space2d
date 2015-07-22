@@ -5,8 +5,12 @@
 
 class Game : public StateManager
 {
+
 public:
 	virtual int Run(sf::RenderWindow &window);
 
+private:
+	sf::Event event;
+	bool running;
 };
 #endif
