@@ -1,20 +1,37 @@
 #include "Menu.h"
+#include <iostream>
 
 int Menu::Run(sf::RenderWindow &window)
 {
 	bool running = true;
-	//Background::Background("Resources/Lobby.png");
-	
+	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Menu.jpg");
+	MenuGraphics Butttons;
+	window.setFramerateLimit(60);
+
 	//loop
 	while (running)
 	{
 		while (window.pollEvent(event))
 		{
+			bg.Render(window);
 			if (event.type == sf::Event::Closed)
 			{
 				return (-1);
 			}
-
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+			{
+				return (-1);
+			}
+			if (event.type == sf::Event::MouseButtonPressed)
+			{
+				int check = -2;
+				mPosition = sf::Mouse::getPosition(window);
+				check = Butttons.CheckClick(mPosition.x, mPosition.y);
+				if (check == 1 || check == 2 || check == (-1))
+				{
+					return check;
+				}
+			}
 			/*if (event.type == sf::Event::MouseButtonReleased)
 			{
 				mPosition = sf::Mouse::getPosition(window);
@@ -41,7 +58,10 @@ int Menu::Run(sf::RenderWindow &window)
 				}
 				*/
 		}
-
+		window.clear();
+		bg.Render(window);//Render background
+		Butttons.Render(window);//Render buttons to screen
+		window.display();
 			
 	}
 

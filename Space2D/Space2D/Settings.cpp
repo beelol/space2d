@@ -7,6 +7,5 @@ int Settings::Run(sf::RenderWindow &window)
 	{
 
 	}
-	
-	return (-1);
+		return (-1);
 }

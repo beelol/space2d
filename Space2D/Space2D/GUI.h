@@ -4,7 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <sstream>
-
+	
+	//Background
 	class Background
 	{
 	public:
@@ -15,4 +16,22 @@
 		sf::Sprite  bgSprite;
 	};
 
+	//menu graphics
+	class MenuGraphics// : public Menu
+	{
+	public:
+
+		MenuGraphics();
+		void Render(sf::RenderWindow &window);
+		int CheckClick(int x, int y);
+	private:
+		
+		sf::Texture MStartTex;//start button tex
+		sf::Texture MOptionsTex;//option button tex
+		sf::Texture MExitTex;//exit button tex
+
+		sf::Sprite StartSprite;//Button start sprite
+		sf::Sprite OptionsSprite;//Button Options sprite
+		sf::Sprite ExtSprite;//Button Exit sprite
+	};
 #endif

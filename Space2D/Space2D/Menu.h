@@ -5,9 +5,7 @@
 
 class Menu : public StateManager
 {
-
 public:
-	//Menu();
 	virtual int Run(sf::RenderWindow &window);
 
 private:
@@ -16,6 +14,7 @@ private:
 	sf::Vector2i mPosition;
 	sf::Texture texture;
 	sf::Sprite sprite;
+	sf::Sprite* currentSpr;
 };
 
 #endif

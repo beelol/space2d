@@ -17,16 +17,15 @@ int main()
 	//create window
 	IOScreen ioscreen;
 	sf::RenderWindow window;
-	window.setFramerateLimit(60);
 
 	if (!ioscreen.getScreenSettings())
 	{
-		window.create(sf::VideoMode(1920, 1080, 32), "Space2D", sf::Style::Fullscreen);
+		window.create(sf::VideoMode(1280, 720, 32), "Space2D", sf::Style::Fullscreen);
 		window.setMouseCursorVisible(false);
 	}
 	else
 	{
-		window.create(sf::VideoMode(1920, 1080, 32), "Space2D", sf::Style::Default);
+		window.create(sf::VideoMode(1280, 720, 32), "Space2D", sf::Style::Default);
 	}
 
 	//states
@@ -44,9 +43,7 @@ int main()
 	while (screenState >= 0)
 	{
 		//when screen changes
-	//	if ()
-	//	{
-	//	}
+		//DO STUFF
 
 		//main loop
 		screenState = states[screenState]->Run(window);
