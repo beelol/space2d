@@ -12,9 +12,6 @@ private:
 	sf::Event event;
 	bool running;
 	sf::Vector2i mPosition;
-	sf::Texture texture;
-	sf::Sprite sprite;
-	sf::Sprite* currentSpr;
 };
 
 #endif

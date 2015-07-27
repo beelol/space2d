@@ -18,7 +18,7 @@ int main()
 	IOScreen ioscreen;
 	sf::RenderWindow window;
 
-	if (!ioscreen.getScreenSettings())
+	if (!ioscreen.getFullScreen())
 	{
 		window.create(sf::VideoMode(1280, 720, 32), "Space2D", sf::Style::Fullscreen);
 		window.setMouseCursorVisible(false);

@@ -9,7 +9,7 @@ public:
 	virtual int Run(sf::RenderWindow &window);
 
 private:
-	//sf::Event event;
-	//bool running;
+	sf::Event event;
+	bool running;
 };
 #endif

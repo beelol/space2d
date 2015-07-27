@@ -7,6 +7,11 @@ class Settings : public StateManager
 {
 public:
 	virtual int Run(sf::RenderWindow &window);
+
+private:
+	bool running;
+	sf::Event event;
+	sf::Vector2i mPosition;
 };
 
 #endif

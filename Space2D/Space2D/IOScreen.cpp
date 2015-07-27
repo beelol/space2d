@@ -1,7 +1,7 @@
 #include "IOScreen.h"
 #include <fstream>
 
-bool IOScreen::getScreenSettings()
+bool IOScreen::getFullScreen()
 {
 	std::ifstream readInFile;
 	readInFile.open("stuff//screenSettings.txt", std::ios::in);

@@ -2,8 +2,8 @@ class IOScreen
 {
 public:
 
-	bool getScreenSettings();
-	void setScreenSettings(bool &screen);
+	bool getFullScreen();
+	void SetFullScreen(bool &screen);
 
 private:
 

@@ -51,7 +51,7 @@ int MenuGraphics::CheckClick(int x, int y)
 		y < StartSprite.getPosition().y + StartSprite.getLocalBounds().height)
 	{
 		std::cout << "start ";
-		return 1;
+		return 3;
 	}
 
 	//Check to see if Options button is clicked
@@ -61,7 +61,7 @@ int MenuGraphics::CheckClick(int x, int y)
 		y < OptionsSprite.getPosition().y + OptionsSprite.getLocalBounds().height)
 	{
 		std::cout << "options ";
-		return 2;
+		return 1;
 	}
 
 	//Check to see if exit is clicked
@@ -75,4 +75,44 @@ int MenuGraphics::CheckClick(int x, int y)
 	}
 	return 0;
 
+}
+
+Button::Button()
+{
+
+}
+
+Button::Button(int SpriteX, int  SpriteY, std::string filepath)
+{
+	btnTex.loadFromFile(filepath);
+	btnTex.setSmooth(false);
+	BtnSprite.setTexture(btnTex);
+	BtnSprite.setPosition(SpriteX, SpriteY);
+}
+
+sf::Sprite Button::getSprite()
+{
+	return BtnSprite;
+}
+
+void Button::Render(sf::RenderWindow &window, sf::Sprite &TempSprite)
+{
+	window.draw(TempSprite);
+}
+
+bool Button::CheckClick(int mMouseX, int mMouseY, sf::Sprite &TempSprite)
+{
+	//Check to see if start button is clicked
+	if (mMouseX > TempSprite.getPosition().x &&
+		mMouseY > TempSprite.getPosition().y &&
+		mMouseX < TempSprite.getPosition().x + TempSprite.getLocalBounds().width &&
+		mMouseY < TempSprite.getPosition().y + TempSprite.getLocalBounds().height)
+	{
+		return true;
+	}
+
+	else
+	{ 
+		return false; 
+	}
 }

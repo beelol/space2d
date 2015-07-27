@@ -4,7 +4,7 @@
 int Menu::Run(sf::RenderWindow &window)
 {
 	bool running = true;
-	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Menu.jpg");
+	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/MenuBackground.jpg");
 	MenuGraphics Butttons;
 	window.setFramerateLimit(60);
 
@@ -13,7 +13,6 @@ int Menu::Run(sf::RenderWindow &window)
 	{
 		while (window.pollEvent(event))
 		{
-			bg.Render(window);
 			if (event.type == sf::Event::Closed)
 			{
 				return (-1);
