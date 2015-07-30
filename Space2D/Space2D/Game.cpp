@@ -5,8 +5,12 @@ int Game::Run(sf::RenderWindow &window)
 {
 	bool running = true;
 	Background bg(sf::String );
+	Ship BlueShip(1);
+	Ship RedShip(2);
 
-	
+	BlueShip.LoadShip(1);
+	RedShip.LoadShip(2);
+
 	//Main loop
 	while (running)
 	{
@@ -27,7 +31,7 @@ int Game::Run(sf::RenderWindow &window)
 			}
 		}
 		window.clear();
-		//draw
+		BlueShip.RenderShip(BlueShip.GetSprite(), window);
 		window.display();
 
 	}
