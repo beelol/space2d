@@ -6,9 +6,10 @@ class Ship
 public:
 
 	Ship(int team);
-	sf::Sprite GetSprite();
-	void LoadShip(int shipTeam);
+	void LoadShip(bool team);
 	void RenderShip(sf::Sprite ShipSprite, sf::RenderWindow &window);
+	sf::Sprite GetSprite();
+	int GetTeam();
 
 private:
 	bool redTeam;

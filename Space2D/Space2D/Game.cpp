@@ -32,6 +32,7 @@ int Game::Run(sf::RenderWindow &window)
 		}
 		window.clear();
 		BlueShip.RenderShip(BlueShip.GetSprite(), window);
+		RedShip.RenderShip(RedShip.GetSprite(), window);
 		window.display();
 
 	}

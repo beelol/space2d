@@ -26,7 +26,7 @@ int Menu::Run(sf::RenderWindow &window)
 				int check = -2;
 				mPosition = sf::Mouse::getPosition(window);
 				check = Butttons.CheckClick(mPosition.x, mPosition.y);
-				if (check == 1 || check == 2 || check == (-1))
+				if (check == 1 || check == 2 || check == (-1) || check == (3))
 				{
 					return check;
 				}
