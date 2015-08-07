@@ -4,7 +4,7 @@
 int Menu::Run(sf::RenderWindow &window)
 {
 	bool running = true;
-	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/MenuBackground.jpg");
+	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/MenuBackground.jpg");
 	MenuGraphics Butttons;
 	window.setFramerateLimit(60);
 

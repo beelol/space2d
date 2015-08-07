@@ -3,10 +3,10 @@
 int Settings::Run(sf::RenderWindow &window)
 {
 	bool running = true;
-	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/SettingsBackground.jpg");
-	Button BtnResume(500, 100, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/ResumeButton.png");
-	Button BtnFull(500, 300, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/FullScreenButton.png");
-	Button BtnBack(500, 500, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/BackButton.png");
+	Background bg("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/SettingsBackground.jpg");
+	Button BtnResume(500, 100, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/ResumeButton.png");
+	Button BtnFull(500, 300, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/FullScreenButton.png");
+	Button BtnBack(500, 500, "C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/BackButton.png");
 	while (running)
 	{
 		while (window.pollEvent(event))

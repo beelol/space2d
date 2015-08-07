@@ -11,6 +11,19 @@ public:
 
 private:
 	sf::Event event;
+	
+	float ShipVertAccel;
+	float ShipHorzAccel;
+	float ShipDecelVert;
+	float ShipDecelHorz;
+	float ShipSpeedVert;
+	float ShipSpeedHorz;
+
 	bool running;
+	bool WPressed;
+	bool APressed;
+	bool SPressed;
+	bool DPressed;
+	bool m_SpawnLaser;
 };
 #endif

@@ -18,17 +18,17 @@ void Background::Render(sf::RenderWindow &window)
 MenuGraphics::MenuGraphics()
 {
 	//load Start button sprite
-	MStartTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/StartButton.png");
+	MStartTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/StartButton.png");
 	MStartTex.setSmooth(false);
 	StartSprite.setTexture(MStartTex);
 	StartSprite.setPosition(300, 0);
 	//Load Options Button sprite
-	MOptionsTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/OptionsButton.png");
+	MOptionsTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/OptionsButton.png");
 	MOptionsTex.setSmooth(false);
 	OptionsSprite.setTexture(MOptionsTex);
 	OptionsSprite.setPosition(300, 360);
 	//Load Exit button sprite
-	MExitTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/ExitButton.png");
+	MExitTex.loadFromFile("C:/Users/Liam/Documents/GitHub/space2d/Space2D/Space2D/Resources/Textures/ExitButton.png");
 	MExitTex.setSmooth(false);
 	ExtSprite.setTexture(MExitTex);
 	ExtSprite.setPosition(300, 600);
