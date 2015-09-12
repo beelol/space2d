@@ -1,12 +1,13 @@
 #include <vector>
 #include <iostream>
 #include  <SFML\Graphics.hpp>
-#include "StateManager.h" //Custom
-#include "IOScreen.h" //Custom
-#include "Menu.h" //Custom
-#include "Game.h" //Custom
-#include "Lobby.h" //Custom
-#include "Settings.h" //Custom
+
+#include "StateManager.h" 
+#include "IOScreen.h" 
+#include "Menu.h" 
+#include "Game.h" 
+#include "Lobby.h" 
+#include "Settings.h" 
 
 int main()
 {

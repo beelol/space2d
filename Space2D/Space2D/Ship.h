@@ -13,12 +13,14 @@ public:
 	void MoveShip(float ShipAccelVert, float ShipAccelHorz, float deltaTime);// Moves the ship when buttons are clicked and decelerates ship.
 	void ShipCheckCollision();
 	void ShootLaser(sf::RenderWindow &window);//Shoots laser.....
+	void RayCast();
 
 	//Get functions:
 	sf::Sprite GetSprite();
 	int GetTeam();
 	float GetSpeedVert();
 	float GetSpeedHorz();
+	float GetAngle();
 
 private:
 	bool m_RedTeam;
@@ -34,9 +36,10 @@ private:
 	float m_ShipMaxVel = 6.3;// Max speed the ship can reach.
 	float m_DX, m_DY; // Distance in x and in y from the sprite to the mouse. Calculated in TrackMouse function.
 	float m_ShipAngle;//Angle that the ship is facing.
-	float m_LaserSpeed = 1500;//Speed of laser
+	float m_LaserSpeed = 2500;//Speed of laser
 	float m_LaserMoveX;
 	float m_LaserMoveY;
+	//sf::Vector<T> float m_RayCast;
 
 	sf::Texture m_ShipTex;//Ship texture
 	sf::Sprite m_SpriteShip;//Ship sprite

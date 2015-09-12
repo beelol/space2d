@@ -69,6 +69,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Barricade.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GUI.cpp" />
     <ClCompile Include="IOScreen.cpp" />
@@ -81,6 +82,7 @@
     <ClCompile Include="WindowStates.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Barricade.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="IOScreen.h" />
